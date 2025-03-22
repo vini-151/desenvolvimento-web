@@ -14,30 +14,54 @@
 <body>
     <h1 class="text-center">DOM - Página interativa com JavaScript</h1>
 
+    <!-- Botao reset -->
+    <div class="container">
+        <button onclick="reset()">Reset</button>
+    </div>
 
     <!-- Contador -->
     <h4 class="container">Contador</h4>
     <div class="container text-center contador">
-       
+
         <button id="contarDw">Decremento</button>
-        <div class="px-5"><p id="display"></p></div>
+        <div class="px-5">
+            <p id="display"></p>
+        </div>
         <button id="contarUp">Incremento</button>
     </div>
 
-    <!-- Texto dinâmico -->
+    <!-- Texto dinâmico e contador de char-->
     <h4 class="container">Texto dinâmico</h4>
     <div class="container  txtDinamico px-4">
-        <input type="text" placeholder="Digite aqui" id="campoTxt">
+        <input type="text" placeholder="Digite aqui" id="campoTxt"> <span id="contadorDeChar"></span>
+        <p class="container py-5" id="textDinamico">
+        </p>
+    </div>
+
+    <!-- criador de listas -->
+    <div class="container">
+        <label for="opcoes" class="">Escolha uma opção</label>
+        <select name="opcoes" id="opcoesLista">
+            <option value="Selecione">Selecione</option>
+            <option value="listaOr">OL</option>
+            <option value="listaNor">UL</option>
+        </select>
+
+        <button onclick="adicionarLista()">Adicionar Lista</button>
+
+        <div id="listaMostrada"></div>
 
 
-    <div class="container py-5" id="textDinamico">
+
+
         
     </div>
-    </div>
+    
 
 
 
 
     <script src="main.js"></script>
 </body>
+
 </html>
